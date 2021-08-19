@@ -144,7 +144,8 @@ public class GSLogger {
                         + ".log"), true);
             }
         } catch (IOException ex) {
-            TerminalErrorPrinter.printException(ex);
+            TerminalErrorPrinter.printException(getClass().getName()
+                    + ".initLogFile", ex);
             MessageBox.showWarning("Unable to initialize logger.\n\n"
                     + "GSLogger.initLogFiles()", "Logging Setup Failure");
         }
@@ -217,7 +218,8 @@ public class GSLogger {
                 }
             }
         } catch (IOException ex) {
-            TerminalErrorPrinter.printException(ex);
+            TerminalErrorPrinter.printException(getClass().getName() 
+                    + ".copyTempToPermanentLog", ex);
             String ttl = "Logging Setup Failure";
             MessageBox.showError(ex, ttl);
         }
@@ -260,7 +262,8 @@ public class GSLogger {
                 log.flush();
                 log.close();
             } catch (IOException ex) {
-                TerminalErrorPrinter.printException(ex);
+                TerminalErrorPrinter.printException(getClass().getName() 
+                        + "close", ex);
             }
         }
     }
@@ -284,7 +287,8 @@ public class GSLogger {
                 }
                 log.flush();
             } catch (IOException ex) {
-                TerminalErrorPrinter.printException(ex);
+                TerminalErrorPrinter.printException(getClass().getName() 
+                        + "config", ex);
             }
         }
     }
@@ -380,7 +384,8 @@ public class GSLogger {
 
                 log.flush();
             } catch (IOException e) {
-                TerminalErrorPrinter.printException(e);
+                TerminalErrorPrinter.printException(getClass().getName() 
+                        + "critical", e);
             }
         }
     }
@@ -471,7 +476,8 @@ public class GSLogger {
 
                 log.flush();
             } catch (IOException e) {
-                TerminalErrorPrinter.printException(e);
+                TerminalErrorPrinter.printException(getClass().getName() 
+                        + "error(Class, Exception, String)", e);
             }
         }
     }
@@ -494,7 +500,8 @@ public class GSLogger {
                 }
                 log.flush();
             } catch (IOException ex) {
-                TerminalErrorPrinter.printException(ex);
+                TerminalErrorPrinter.printException(getClass().getName() 
+                        + "debug", ex);
             }
         }
     }
@@ -544,7 +551,8 @@ public class GSLogger {
                 }
                 log.flush();
             } catch (IOException ex) {
-                TerminalErrorPrinter.printException(ex);
+                TerminalErrorPrinter.printException(getClass().getName() 
+                        + "debug(String, String[], Object[])", ex);
             }
         }
     }
@@ -580,7 +588,8 @@ public class GSLogger {
                 }
                 log.flush();
             } catch (IOException ex) {
-                TerminalErrorPrinter.printException(ex);
+                TerminalErrorPrinter.printException(getClass().getName() 
+                        + "enter(String)", ex);
             }
         }
     }
@@ -611,7 +620,8 @@ public class GSLogger {
                 }
                 log.flush();
             } catch (IOException ex) {
-                TerminalErrorPrinter.printException(ex);
+                TerminalErrorPrinter.printException(getClass().getName() 
+                        + "enter(String, Object)", ex);
             }
         }
     }
@@ -654,7 +664,8 @@ public class GSLogger {
                 }
                 log.flush();
             } catch (IOException ex) {
-                TerminalErrorPrinter.printException(ex);
+                TerminalErrorPrinter.printException(getClass().getName() 
+                        + "enter(String, Object[])", ex);
             }
         }
     }
@@ -696,7 +707,8 @@ public class GSLogger {
                 }
                 log.flush();
             } catch (IOException ex) {
-                TerminalErrorPrinter.printException(ex);
+                TerminalErrorPrinter.printException(getClass().getName() 
+                        + "exit(String)", ex);
             }
         }
     }
@@ -728,7 +740,8 @@ public class GSLogger {
                 }
                 log.flush();
             } catch (IOException ex) {
-                TerminalErrorPrinter.printException(ex);
+                TerminalErrorPrinter.printException(getClass().getName() 
+                        + "exit(String, Object)", ex);
             }
         }
     }
@@ -770,7 +783,8 @@ public class GSLogger {
                 }
                 log.flush();
             } catch (IOException ex) {
-                TerminalErrorPrinter.printException(ex);
+                TerminalErrorPrinter.printException(getClass().getName() 
+                        + "exit(String, Object[])", ex);
             }
         }
     }
@@ -832,7 +846,8 @@ public class GSLogger {
                 }
                 log.flush();
             } catch (IOException ex) {
-                TerminalErrorPrinter.printException(ex);
+                TerminalErrorPrinter.printException(getClass().getName() 
+                        + "info", ex);
             }
         }
     }

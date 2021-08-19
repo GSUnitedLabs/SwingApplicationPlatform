@@ -31,7 +31,7 @@
  * *****************************************************************************
  */
 
-module gsul.application {
+module gsul.application.framework {
     requires java.base;
     requires java.desktop;
     requires java.logging;

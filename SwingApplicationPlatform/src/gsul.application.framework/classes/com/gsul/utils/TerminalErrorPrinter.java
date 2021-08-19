@@ -36,9 +36,9 @@ package com.gsul.utils;
  */
 public class TerminalErrorPrinter {
 
-    public static void printException(Exception ex) {
+    public static void printException(String location, Exception ex) {
         System.err.println("The following Exception was encountered in the "
-                + "Project API:");
+                + "Project API at " + location + ":");
         System.out.println(StringUtils.repeat("-", 80));
         System.err.println(ex.getMessage());
         System.err.println(ex.getCause());
