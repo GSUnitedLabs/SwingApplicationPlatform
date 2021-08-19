@@ -15,11 +15,11 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * 
  * *****************************************************************************
- *  Project    :   NTA-Basic
- *  Class      :   ModuleLoader.java
+ *  Project    :   SwingApplicationPlatform
+ *  Class      :   module-info.java
  *  Author     :   Sean Carrick
- *  Created    :   Aug 16, 2021 @ 5:05:40 PM
- *  Modified   :   Aug 16, 2021
+ *  Created    :   Aug 19, 2021 @ 2:44:45 PM
+ *  Modified   :   Aug 19, 2021
  * 
  *  Purpose:     See class JavaDoc comment.
  * 
@@ -27,22 +27,13 @@
  * 
  *  WHEN          BY                   REASON
  *  ------------  -------------------  -----------------------------------------
- *  Aug 16, 2021  Sean Carrick         Initial creation.
+ *  Aug 19, 2021  Sean Carrick         Initial creation.
  * *****************************************************************************
  */
-package com.gsul.application.spi;
 
-/**
- *
- * @author Sean Carrick &lt;sean at gs-unitedlabs dot com&gt;
- *
- * @version 1.0.0
- * @since 1.0.0
- */
-public class ModuleLoader {
-
-    public ModuleLoader () {
-
-    }
-
+module gsul.application.platform {
+    requires java.base;
+    requires java.desktop;
+    
+    requires gsul.application.framework;
 }

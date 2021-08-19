@@ -34,8 +34,8 @@
 module gsul.application.framework {
     requires java.base;
     requires java.desktop;
-    requires java.logging;
     
-    exports com.gsul.application;
-    exports com.gsul.application.support;
+    // Qualified export: we are only exporting to the Platform module so that it
+    //+ has access to the com.gsul.utils package.
+    exports com.gsul.utils to gsul.application.platform;
 }
