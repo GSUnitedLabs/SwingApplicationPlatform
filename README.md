@@ -13,3 +13,4 @@ Therefore, the NTA Project team began discussing what they could do to solve the
 
 This being the requirement of the NTA Project, leads us to believe that there are multiple other projects out there that could also benefit from an application platform that provides as much of everything that an application would require as a library. This would allow developers to concentrate on the business logic of their projects, without the need of reinventing the wheel for every project they start.
 
+An application framework for Java modular projects and a platform for GUI Java modular projects.
