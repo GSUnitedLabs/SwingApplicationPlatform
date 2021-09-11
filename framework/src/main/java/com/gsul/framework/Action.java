@@ -32,8 +32,6 @@
  */
 package com.gsul.framework;
 
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
 import javax.swing.AbstractAction;
 import javax.swing.Icon;
 
