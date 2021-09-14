@@ -34,7 +34,6 @@
 module Framework {
     requires java.base;
     requires java.desktop;
-    requires java.logging;
     
     exports com.gsul.framework;
 }
